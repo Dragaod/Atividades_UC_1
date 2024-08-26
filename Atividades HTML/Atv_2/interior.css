@@ -1,0 +1,73 @@
+#cabecalho {
+    background-color: #9acd32;
+    width: 900px;
+    height: auto;
+    text-align: center;
+    padding: 10px 0px;
+}
+#lado_esquerdo {
+    position: relative;
+    background-color: #00ffff;
+    width: 200px;
+    float: left;
+}
+#esquerdo {
+    position: relative;
+    margin: auto;
+    background-color: #ffffff;
+    width: 90%;
+    height: 170px;
+}
+#baixo {
+    position: relative;
+    margin: 10px auto;
+    background-color: #ffffff;
+    width: 90%;
+    height: 170px;
+}
+#lado_direito {
+    position: relative;
+    float: left;
+    background-color: #8a2be2;
+    width: 700px;
+    height: auto;
+}
+#article > p {
+    background-color: #ff7f50;
+    width: 100%;
+    height: 90px;
+    margin: 0px 0px 10px 0px;
+}
+#article {
+    position: relative;
+    margin: auto;
+    background-color: #f0f8ff;
+    width: 680px;
+    height: 360px;
+}
+#article > h1 {
+    background-color: #7fffd4;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+#imagem {
+    position: relative;
+    background-color: #2f4f4f;
+    width: 100%;
+    height: 200px;
+
+}
+#centralizar {
+    position: relative;
+    width: 900px;
+    height: auto;
+    margin: auto;
+}
+#rodape {
+    position: relative;
+    background-color: #800000;
+    width: 900px;
+    height: 100px;
+    clear: left;
+    color: #ffffff;
+}

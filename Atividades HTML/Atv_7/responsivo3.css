@@ -1,0 +1,326 @@
+/* CSS RESET*/
+*{
+	margin:0;
+	padding:0;
+	border:0; 
+}
+
+body{
+	color:#FFF;
+	font-size:30px;
+	text-align:center;
+	font-family:tahoma;
+}
+
+
+#fundo{
+	position:relative;
+	width:90%;
+	height:auto;
+	
+	margin:auto;
+	font-family:verdana;
+	margin-top:30px;
+		}
+		
+ #titulo{
+	position:relative;
+	width:100%;
+	height:80px;
+	background-color:#000;
+	color:#FFF;
+	text-align:center;
+	font-size:40px;
+	padding-top:20px;
+	}
+	
+#menu_acima{
+	position:relative;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	background-color:#009;
+	height: 30px;
+	}
+
+	
+#menu_acima a{
+	width:17%;
+	text-align:center;
+	font-size:15px;
+	text-decoration:none; /*retirando o sublinhado do hiperlink*/
+	background-color:#009;
+	color:#fff;
+	padding-top: 5px;
+	/*float:left;*/
+	}
+	
+#menu_acima a:hover{ /*hover é o que inverte a cor quando coloca o mouse*/	
+	background-color:#FFF;
+	color:#009;
+	transition: 2s all; /*Adiciona animação*/
+		}
+	
+#menu_lateral{
+	position:relative;
+	width:20%;
+	height:450px;
+	background-color: rgb(255, 255, 255);
+	float:left;
+	}
+	
+#menu_lateral a{
+	width:90%;
+	text-align:left;
+	font-size:15px;
+	text-decoration:none;
+	background-color:#999;
+	color:#fff;
+	padding: 10px;
+	border-bottom:1px solid #ffffff;
+	display:block;
+	}
+	
+#menu_lateral a:hover{
+background-color:	#000;
+border-color:#F00;
+	}
+	
+#meio{
+	position:relative;
+	width:60%;
+	height:450px;
+	background-color: rgb(255, 255, 255);
+	float:left;
+	}
+	
+#banner{
+		background-image: url(Imagem/7c5c85b6-dadf-4f6b-9da1-620e5870a088.jpg);
+	background-size: auto;
+	background-position: center;
+	position:relative;
+	width:20%;
+	height:450px;
+	float:left;
+	background-color: rgb(255, 255, 255);
+	}
+	
+#banner img{
+	width:100%;
+	height:100%
+}	
+
+#rodape{
+	position:relative;
+	width:100%;
+	height:40px;
+	background-color:#000;
+	clear:left;
+	text-align:center;
+	color:#FFF;
+	font-size:30px;
+	padding-top:10px;
+	}
+	
+#titulo2{
+	position:relative;
+	width:95%;
+	margin:auto;
+	background-color:#FFF;
+	height:40px;
+	text-align:center;
+	padding-top:10px;
+	COLOR:#000;
+	}
+	
+#imagem{
+	
+	position:relative;
+	width:95%;
+	margin:auto;
+	height:160px;
+	background-color: rgb(255, 255, 255);
+	background-size:100%;
+	margin-top:10px;
+	background-image: url(Imagem/tablet.jpg);
+	
+	}
+
+#texto{
+	position:relative;
+	width:93%;
+	margin:auto;
+	background-color:rgb(255, 255, 255);
+	height:80px;
+	text-align:justify;
+	font-size:12px;
+	padding:5px;
+		margin-top:10px;
+		color:#000;
+	}
+	
+#figuras{
+	position:relative;
+	width:95%;
+	margin:auto;
+
+	height:80px;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+		margin-top:10px;
+	}
+	
+#figuras div{
+
+	width:30%;
+	height:100px;
+	background-color:#ffffff;
+	}
+
+#fig1{
+	background-image: url(Imagem/e60eedc8-e7e1-491d-9eca-35255cb86477.jpg);
+	background-size: auto;
+	background-position: center;
+	background-color: rgb(255, 255, 255);
+	background-size:100%;
+	}
+	
+#fig2{
+	background-image: url(Imagem/67ea2d4d-da96-4852-ad52-d04724f36599.jpg);
+	background-size: auto;
+	background-position: center;
+	background-color: rgb(255, 255, 255);
+	background-size:100%;
+	}
+	
+#fig3{
+	background-image: url(Imagem/839ec8dc-4537-47cb-a183-c0767db1d594.jpg);
+	background-size: auto;
+	background-position: center;
+	background-color: rgb(255, 255, 255);
+	background-size:100%;
+	}
+
+	/*Visualização Mobile*/
+
+	/*Area none*/
+
+	@media only screen and (max-width: 480px){
+
+		#menu_lateral, #banner,#texto,#imagem{
+			display: none;
+		}
+ 		
+		#fundo{
+			width: 98%;
+		}
+
+		#menu_acima {
+
+			color: #FFF;
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 250px;
+
+		}
+
+		#menu_acima a{
+
+			color: #FFF;
+			width: 100%;
+			height: 30px;
+		}
+		
+		#meio{
+			width: 100%;
+			height: 650px;
+		}
+
+		#titulo2{
+			font-size: 20%;
+			width: 100%;
+		}
+
+
+		#figuras div{
+			height:200px;
+			background-color:#ffffff;
+			width: 100%;
+			height: 200px;
+		}
+
+		#figuras{
+			display: flex;
+			flex-direction: column;
+			height: auto;
+		
+		}
+			
+		#fig1{
+			background-image: url(Imagem/e60eedc8-e7e1-491d-9eca-35255cb86477.jpg);
+			background-size: auto;
+			background-position: center;
+			background-color: rgb(255, 255, 255);
+			background-size:100%;
+			}
+			
+		#fig2{
+			background-image: url(Imagem/67ea2d4d-da96-4852-ad52-d04724f36599.jpg);
+			background-size: auto;
+			background-position: center;
+			background-color: rgb(255, 255, 255);
+			background-size:100%;
+			}
+			
+		#fig3{
+			background-image: url(Imagem/839ec8dc-4537-47cb-a183-c0767db1d594.jpg);
+			background-size: auto;
+			background-position: center;
+			background-color: rgb(255, 255, 255);
+			background-size:100%;
+			}
+
+
+	}	
+
+
+	
+
+
+	/*visualização*/
+
+	@media only screen and (min-width:481px){
+		@media only screen and (max-width:720px){
+
+			#fundo {
+				width:95%;
+			}
+
+			#menu_acima{
+				width: 100%;
+				height: 50px;
+				display: block;
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			#menu_acima a{
+				width: 33%;
+				color: #FF0;
+			}
+
+			#menu_lateral, #banner{
+				display: none; /*retira "fisicamente" o componente*/
+			}
+
+			#meio{
+				width: 100%;
+			}
+				
+			
+		}
+	}
